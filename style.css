@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    background: linear-gradient(violet, rgb(235, 212, 247));
+}
+p{
+    width:100%;
+    font-size: 25px;
+    border-width: 5px;
+    border-style: outset;
+    border-color: #8808C4;
+}
+.heading
+{
+    width: 80%;
+    font-size: 30px;
+    padding: 15 px;
+    font-weight: bold;
+}
+.nombre_objetos, #nombre_objeto_identificado, #precision_objeto_identificado
+{
+    color: rgba(19, 31, 143, 0.849);
+    font-size: 25px;
+}
+#camera, #result
+{
+    border: 2px dashed rgba(19, 31, 143, 0.849);
+    width: 350px;
+    height: 300px;
+}
+label{
+    padding: 10px;
+    background-color: white;
+    border-radius: 22px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,51 @@
+ 
+<html>
+  <head>
+    <title>Reconocimiento de Imagen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="heading">RECONOCIMIENTO DE IMAGEN</h3>
+
+      <br><br>
+
+      <p>Este modelo está entrenado para identificar los siguientes objetos: <br>
+        <span class="nombre_objetos">Teléfono</span>
+        <span class="nombre_objetos">Libro</span> 
+        <span class="nombre_objetos">Engrapadora</span> 
+        <span class="nombre_objetos">Cuchara</span> 
+        <span class="nombre_objetos">Tijeras</span>
+        </p>
+              <label>Vista de la Cámara:</label>
+              <div id="camera"></div>
+               <br><br>
+              <label>Objeto a Identificar:</label>
+              <div id="result"></div>
+              <br><br>
+              <button onclick="tomar_foto();" class="btn btn-success">Capturar imagen</button>
+              <br><br>
+              <button onclick="check();" class="btn btn-success">Identificar imagen</button>
+              <br><br>
+
+      <p style="font-size: 22px;">Objeto: <span id="nombre_objeto_identificado"></span>  </p>
+      <p style="font-size: 22px;">Precisión: <span id="precision_objeto_identificado"></span></p>
+<script src="main.js"></script>
+</center>
+
+  </body>
+</html>
+
+ 
